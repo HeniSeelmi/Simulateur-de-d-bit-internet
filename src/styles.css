@@ -1,0 +1,578 @@
+/* Header Styles */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #397eb9;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+
+
+.logo img {
+    height: 50px;
+    
+}
+
+
+.employee-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .counter-btn {
+    background-color: #111c25;
+    color: #397eb9;
+    font-size: 40px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 50px;
+    cursor: pointer;
+  }
+  .counter-butn{
+    background-color: #111c25;
+    color: #397eb9;
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 50px;
+    cursor: pointer;
+
+
+
+
+
+  }
+  
+  .employee-count {
+    font-size: 100px;
+  }
+  
+  .next-btn {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 1rem;
+    padding: .85em 1em;
+    border: 1px solid transparent;
+    transition: background-color .25s ease-out, color .25s ease-out;
+    line-height: 1;
+    text-align: center;
+    background-color: #f74974;
+    color: #fff;
+    min-width: 15rem;
+    border-radius: 2.1875rem;
+    font-size: 1.5625rem;
+    cursor: pointer;
+  }
+
+  .quality-option {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.quality-count {
+    position: absolute;
+    top: 97px;  /* Ajuste la position du compteur au-dessus du bouton */
+    left: 50%;
+    transform: translateX(-50%);
+    color: whitesmoke;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: museo-sans, sans-serif;
+
+}
+
+  
+  .next-btn:disabled {
+    background-color: #b0c4de;
+    cursor: not-allowed;
+  }
+
+.logo1  {
+    height: 50px;
+}
+
+.nav a {
+    margin-left: 20px;
+    margin-inline-start: 50px;
+    color: black;
+    text-decoration: none;
+    font-family: museo-sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+
+}
+
+.nav a:hover {
+    text-decoration: overline;
+    text-decoration-color: #1585cf;
+}
+
+/* Menu burger pour petites résolutions */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px;
+    background-color: #00bfff;
+  }
+  
+  /* Menu déroulant visible sur petites résolutions */
+  .nav-dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-dropdown a {
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+  
+  /* Responsive - Affiche le burger sur petites résolutions */
+  @media screen and (min-width: 40em) and (max-width: 64em) {
+    .nav {
+      display: none;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    .nav-dropdown {
+      display: flex;
+    }
+  }
+
+/* MainContent Styles */
+.main-content {
+    font-family: museo-sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #397eb9;
+    color: white;
+}
+p{
+    color: rgb(71, 71, 71);
+
+}
+
+.main-content h1,h2,h3 {
+    font-size: 2.5rem;
+    font-family: museo-sans, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    max-width: 62.5rem;
+    margin: .9375rem auto;
+    line-height: 1.2em;
+}
+
+.highlight {
+    color: orange;
+}
+.back-link {
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Conteneur du tableau */
+.table-container {
+    display: table;
+    margin: 0 auto;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Styles pour les titres dans les cellules */
+.table-cell h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Style des boutons */
+.btn {
+    background-color: #2a79bc;
+    color: orange;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 2px solid orange;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+/* Navbar */
+/* Style pour le conteneur principal de la page */
+
+/* Style pour la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+} /* Assure que la barre de navigation est au-dessus des autres éléments */
+
+
+/* Style pour le logo de la barre de navigation */
+.navbar-logo {
+    height: 40px;
+}
+
+/* Style pour le titre de la barre de navigation */
+.navbar-title {
+    font-size: 20px;
+}
+
+/* Style pour le contenu principal de la page */
+.content {
+    margin-top: 60px; /* Ajuste la marge pour éviter que le contenu soit caché sous la barre de navigation */
+    padding: 20px;
+    flex: 1; 
+}
+
+
+
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #397eb9;
+    color: rgb(71, 71, 71);
+}
+
+.survey-content {
+    text-align: center;
+    padding: 50px;
+    background-color: #397eb9;
+    color: white;
+}
+
+.survey-description{
+    color: #a6c3ff;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+
+
+.survey-img {
+    width: 40%;
+    height: auto;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  
+  .survey-options {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;  /* Ajout d'un espace entre les boutons */
+  }
+  
+ 
+    
+  
+  .survey-btn:hover {
+    background-color: #0c5f8b;
+  }
+
+    /* Conteneur de la barre de progression */
+.progress-bar-container {
+    background-color: #0a0f14; /* Fond sombre */
+    border: 2px solid #00d7ff; /* Bordure bleue autour */
+    border-radius: 25px; /* Bords arrondis */
+    padding: 3px; /* Espacement interne */
+    width: 50%; /* Largeur de la barre */
+    position: relative; /* Position relative pour le texte */
+    height: 20px; /* Hauteur de la barre */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Barre de progression */
+  .progress-bar {
+    background-color: #ff477e; /* Couleur rose/rouge */
+    border-radius: 20px; /* Bords arrondis */
+    height: 70%; /* Occupe toute la hauteur du conteneur */
+  }
+  
+  /* Texte de la progression */
+  .progress-text {
+    position: absolute;
+    right: 10px; /* Position du texte à droite */
+    color: white; /* Couleur du texte */
+    font-weight: bold; /* Texte en gras */
+  }
+
+  /* Conteneur principal */
+.speed-display-container {
+    display: flex;
+    align-items: center; /* Aligne verticalement le texte et la vitesse */
+    color: #00d7ff; /* Couleur bleue pour le texte */
+    font-family: Arial, sans-serif; /* Style de police */
+  }
+  
+  /* Texte "Vitesse Minimum Recommandée" */
+  .speed-text {
+    font-size: 14px; /* Taille du texte pour la description */
+    margin-right: 10px; /* Espacement entre le texte et la valeur */
+    line-height: 1.2; /* Espacement entre les lignes */
+  }
+  
+  /* Valeur de la vitesse */
+  .speed-value {
+    font-size: 40px; /* Grande taille pour mettre en évidence la vitesse */
+    font-weight: bold; /* Met en gras la vitesse */
+  }
+  
+  /* Unité "Mbps" */
+  .speed-unit {
+    font-size: 18px; /* Taille plus petite pour l'unité */
+    font-weight: normal;
+    margin-left: 5px; /* Un peu d'espace entre la valeur et l'unité */
+  }
+  
+  
+
+  .interface1-container {
+    background-color: #397eb9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .survey-form {
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+}
+
+
+.submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    cursor: pointer;
+}
+
+.link-text {
+    display: block;
+    margin-top: 70px;
+    color: white;
+    text-decoration: underline;
+}
+.link-text:hover {
+    color: black;
+    
+}
+  
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;  /* Pour bien l'espacer de la navbar */
+}
+
+/* Icône du point d'interrogation */
+.tooltip-icon {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin: 0 auto;
+    background-color: #05111e;
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 2.1875rem;
+    cursor:pointer;
+    border-radius: 50%;
+}
+
+/* Boîte qui s'affiche lors du clic */
+.tooltip-box {
+    width: 18.75rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5625rem!important;
+    border-radius: 25px!important;
+    background-color: #46464a!important;
+    color: #fff!important;
+    text-align: center;
+    opacity: 1!important
+}
+
+/* Style du texte dans la boîte */
+.tooltip-box p {
+    margin-bottom: 0;
+    margin-top: auto;
+    font-size: 1.125rem;
+    color:white;
+    text-align: center;
+    font-family: museo-sans, sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+
+}
+
+/* Section contenant le tooltip sous la navbar */
+.info-tooltip-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.icon-info:after {
+    content: "?"
+}
+
+.icon-info p {
+    margin-bottom: 0
+}
+
+.icon-subtract {
+    font-size: 2.8125rem
+}
+
+.employees-container {
+    max-width: 20rem;
+    margin: .9375rem auto;
+}
+
+/* Styles pour le texte "Retour" */
+.go-back-text {
+    margin-top: 20px;
+    text-align: left;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+.go-back-text:hover {
+    text-decoration: underline;
+}
+.video-quality-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.quality-description {
+    font-size: 1.17em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.quality-options {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.quality-btn {
+    padding: 30px 60px;
+    margin: 5px;
+    border: 3px solid #5998c5;
+    background-color:#397eb9;
+    font-family: museo-sans, sans-serif;
+    color: white;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: visible;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+.quality-btn:focus{
+    background-color: #0c1e4e;
+    color: #fff;
+    font-family: museo-sans, sans-serif;
+}
+
+.survey-btn {
+    background-color:#397eb9;
+    color: white;
+    padding: 30px 60px;
+    margin: 10px;
+    border: 2px solid #8ac7f3;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    border-radius: 50px;
+}
+
+.quality-btn:hover {
+    background-color: #0c1e4e;
+    color: #fff;
+    font-family: museo-sans, sans-serif;
+}
+
+
+
